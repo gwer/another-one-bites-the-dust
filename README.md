@@ -1,6 +1,8 @@
 # another-one-bites-the-dust
 
-Any services status monitor.
+Any services status monitor. It will help answer the question "Is everything okay?"
+
+![image](./example.png)
 
 ## Features
 - Easy configuration
@@ -15,6 +17,8 @@ Any services status monitor.
 You will need Node.js v12+.
 
 ### Simple way
+Fork [boilerplate app](https://github.com/gwer/another-one-bites-the-dust-app) or just clone it.
+
 ```sh
 git clone git@github.com:gwer/another-one-bites-the-dust-app.git
 cd another-one-bites-the-dust-app
