@@ -1,3 +1,4 @@
+const { performance } = require('perf_hooks');
 const { get } = require('./_request');
 
 const checkHeartbeat =

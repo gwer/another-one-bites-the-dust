@@ -12,6 +12,7 @@ Any services status monitor.
 - Dockerflow `__heartbeat__` checker
 
 ## How to use
+You will need Node.js v12+.
 
 ### Simple way
 ```sh
