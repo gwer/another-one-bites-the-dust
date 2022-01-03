@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another One Bites The Dust</title>
+  <link rel="stylesheet" href="/style.css"></style>
+</head>
+<body>
+  <div class="page">
+    <h1>{{group}} Status Page</h1>
+    
+    <div class="group_status {{status}}">
+      {{status}}
+    </div>
+
+    <h1>Services</h1>
+
+    <div class="services">
+      {{#each services}}
+        <div class="service {{this.status}}">
+          <div class="service_name">{{this.name}}</div>
+          <div class="service_status">
+            {{#if this.details}}
+              {{this.details}}
+            {{else}}
+              {{this.status}}
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="last_check">Last check: {{updateTime}}</div>
+  </div>
+</body>
+</html>
