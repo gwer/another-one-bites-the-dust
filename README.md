@@ -6,8 +6,14 @@ Any services status monitor. It will help answer the question "Is everything oka
 
 ## Features
 - Easy configuration
-- You can write your own checker and check whatever you want
+- It's standalone service. You can use it to check resources on a private network
+- You can write your own checkers and check whatever you want
 - Groups of checks (for different types of checks or different environments for example)
+- JavaScript (I'm so sorry)
+
+## It's not for
+- Alerts and notifications
+- Retrospective
 
 ## Built-in checkers
 - Simple HTTP status checker
