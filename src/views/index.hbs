@@ -4,21 +4,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Another One Bites The Dust</title>
+  <title>{{title}}</title>
   <link rel="stylesheet" href="/style.css"></style>
 </head>
 <body>
   <div class="page">
-    <h1>Another One Bites The Dust</h1>
-    {{#each checkData}}
-      <div class="services">
-        <div class="service {{this.status}}">
-          <a href="/group/{{this.group}}" class="service_name">{{this.group}}</a>
-          <div class="service_status">{{this.status}}</div>
+    <h1>{{title}}</h1>
+    <div class="groups">
+      {{#each checkData}}
+        <div class="group {{../groupsMod}}">
+          <div class="group_header row {{this.status}}">
+            <div class="row_name">{{this.group}}</div>
+            <div class="row_status">{{this.status}}</div>
+          </div>
+
+          <div class="services">
+            {{#each this.services}}
+              <div class="row {{this.status}}">
+                <div class="row_name">{{this.name}}</div>
+                <div class="row_status">
+                  {{#if this.details}}
+                    {{this.details}}
+                  {{else}}
+                    {{this.status}}
+                  {{/if}}
+                </div>
+              </div>
+            {{/each}}
+          </div>
         </div>
-      </div>
-    {{/each}}
+      {{/each}}
+    </div>
     <div class="last_check">Last check: {{updateTime}}</div>
   </div>
+
+  <script src="/frontend.js"></script>
 </body>
 </html>
