@@ -117,6 +117,8 @@ const config = {
 }
 ```
 
---
+## Alternatives
 
-*Inspired by [tinystatus](https://github.com/bderenzo/tinystatus).*
+If you need something simpler, try [tinystatus](https://github.com/bderenzo/tinystatus).
+
+If you need something more complicated, with alerts and checks history, try [Gatus](https://github.com/TwiN/gatus).
