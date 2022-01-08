@@ -1,6 +1,6 @@
 {
   "name": "another-one-bites-the-dust",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git@github.com:gwer/another-one-bites-the-dust.git",
   "main": "index.js",
   "author": "gwer",
@@ -15,5 +15,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "keywords": [
+    "health",
+    "check",
+    "healthcheck",
+    "monitoring",
+    "devops",
+    "profiling",
+    "tools"
+  ]
 }
