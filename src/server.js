@@ -4,6 +4,9 @@ const path = require('path');
 const { statusData, startDataPolling } = require('./data_manager');
 
 function server(checkConfig) {
+  process.env.USER_AGENT =
+    process.env.USER_AGENT || checkConfig.userAgent || '';
+
   startDataPolling(checkConfig);
 
   const app = express();
