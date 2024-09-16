@@ -1,6 +1,6 @@
 {
   "name": "another-one-bites-the-dust",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "repository": "git@github.com:gwer/another-one-bites-the-dust.git",
   "main": "index.js",
   "author": "gwer",
